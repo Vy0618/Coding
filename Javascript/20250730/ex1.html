@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let precolitro = Number(prompt("Insira o preço da gasolina por litro:"))
+        let pagamento = Number(prompt("Insira a quantidade que deseja colocar no tanque em reais"))
+        var qntgasolina = pagamento / precolitro
+        var arredondamento = parseFloat(qntgasolina.toFixed(2))
+        console.log(qntgasolina);
+        console.log(arredondamento);
+        alert("Será possível abastecer o tanque com " + arredondamento + " litros de gasolina.")
+    </script>
+</body>
+</html>
