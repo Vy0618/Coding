@@ -1,0 +1,24 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        alert("De acordo com sua faixa etária um desconto será aplicado.\nTabela de descontos:\nCrianças: 8%\nAdultos: 5%\nIdosos: 12%");
+        let n1 = Number(prompt("Insira a sua idade: "));
+        if ( n1 < 18) {
+            alert("Você terá um desconto de 8%.");
+            console.log("Você terá um desconto de 8%.");
+        } else if ( n1 >= 18 && n1 < 60) {
+            alert("Você terá um desconto de 5%.");
+            console.log("Você terá um desconto de 5%.");
+        } else  if ( n1 >= 60 ){
+            alert("Você terá um desconto de 12%.");
+            console.log("Você terá um desconto de 12%");
+        }
+    </script> 
+</body>
+</html>
