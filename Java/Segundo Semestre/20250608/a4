@@ -1,0 +1,33 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+ class ex {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int numerador = 0;
+        ArrayList<Double> notas = new ArrayList<>();
+
+        while (notas.size() <5){
+
+            System.out.println("Entre com a nota do " + (numerador + 1) + "° aluno" );
+            double nota = scan.nextDouble();
+            notas.add(nota);
+            numerador ++;
+        }
+
+        double somatoria = 0;
+        for (int i = 0; i < notas.size(); i++ ) {
+           somatoria += notas.get(i);
+            }
+
+        double mediasala = somatoria/notas.size();
+
+        System.out.println("A média da sala é: " + mediasala + " pontos.");
+        System.out.println("As notas acima da média da sala são: ");
+        
+        for(int i = 0; i < notas.size(); i++)
+         if (notas.get(i) >= mediasala){
+             System.out.println(notas.get(i));
+             
+         }
+        }
+    }

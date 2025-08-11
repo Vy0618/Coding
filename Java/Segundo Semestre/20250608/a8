@@ -1,0 +1,34 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class ex {
+    public static void main(String[] args) {
+        ArrayList<Double> cost = new ArrayList<>();
+        ArrayList<String> name = new ArrayList<>();
+        Scanner scan = new Scanner(System.in);
+        String option;
+        do{
+            System.out.println("Entre com  o nome do produto:");
+            String names = scan.nextLine().toLowerCase();
+            name.add(names);
+
+            System.out.println("Entre com o valor do produto:");
+            double preco = scan.nextDouble();
+            cost.add(preco);
+
+            scan.nextLine();
+
+            System.out.println("Deseja continuar a compra");
+            option = scan.nextLine().toLowerCase();
+        } while(option.equals("sim"));
+
+
+        System.out.println("Produtos com o preço maior de 50R$:");
+        for(int i = 0; i < cost.size(); i++){
+            if(cost.get(i) > 50){
+                System.out.println(name.get(i) + ", preço: " + cost.get(i));
+            }
+
+        }
+    }
+}

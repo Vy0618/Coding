@@ -1,0 +1,60 @@
+//Versão 1, com sentido:
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Scanner;
+class ex {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        ArrayList<Integer> numbers = new ArrayList<>();
+
+        for(int i = 0; i < 5; i++){
+            System.out.println("Entre com o " + (i + 1) + "° número par. Valores ímpares serão anulados.");
+            int w = scan.nextInt();
+            if (w %2 != 0){
+                w = 0;
+            }
+            numbers.add(w);
+        }
+        
+        System.out.println("Lista pós remoção de números divididos por quatro:");
+        numbers.removeIf(numero -> numero % 4 == 0 );
+        System.out.println(numbers);
+        
+    }
+}
+
+//Versão 2, sem sentido:
+
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Scanner;
+class ex {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        ArrayList<Integer> numbers = new ArrayList<>();
+
+        for(int i = 0; i < 5; i++){
+            System.out.println("Entre com o " + (i + 1) + "° número par. Valores ímpares serão anulados.");
+            int w = scan.nextInt();
+            if (w %2 != 0){
+                w = 0;
+            }
+            numbers.add(w);
+        }
+        System.out.println("Lista pós remoção de números divididos por quatro:");
+        for (int i = 0; i < numbers.size(); i++){
+            if(numbers.get(i) %4 == 0 ){
+                numbers.remove(i);
+                i--;
+                System.out.println("DEBUG " + i);
+            }
+        }
+        System.out.println(numbers);
+
+    }
+}
+
+

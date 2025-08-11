@@ -1,0 +1,27 @@
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Scanner;
+ class ex2 {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        ArrayList<String> words = new ArrayList<>();
+
+        while (words.size() <5){
+            int numerador = 0;
+            
+            System.out.println("Entre com o " + (numerador + 1) + "° nome qualquer:");
+            String w = scan.nextLine();
+            
+        words.add(w);
+        
+        }
+        
+        System.out.println("Lista na ordem inversa:");
+        for(int i = words.size() -1; i >= 0 ; i--){
+            System.out.println( words.get(i));
+
+        }
+
+    }
+}

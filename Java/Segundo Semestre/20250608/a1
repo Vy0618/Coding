@@ -1,0 +1,20 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class ex1 {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        ArrayList<Integer> numbers = new ArrayList<>();
+
+        for (int i = 0; i < 10; i++){
+            System.out.println("Entre com o " + (i +1) + "° número inteiro qualquer:");
+            int n = scan.nextInt();
+            numbers.add(n);
+        }
+        System.out.println("Números: " + numbers);
+
+        for (int i = 0; i <10; i++){
+            System.out.println("Números multiplicados por 2: " + (numbers.get(i)*2));
+        }
+    }
+}
