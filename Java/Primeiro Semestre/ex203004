@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        int contagempar = 0;
+        int contagemimpar = 0;
+
+      for(int i = 0; i < 10; i++){
+          System.out.println("Entre com um número inteiro:");
+          int n = scan.nextInt();
+
+          if(n%2 != 0){
+              contagemimpar++;
+          } else {
+              contagempar++;
+          }
+      }
+
+
+        System.out.println("Qntd números ímpares: " + contagemimpar);
+        System.out.println("Qntd números pares:" + contagempar);
+
+
+    }
+}

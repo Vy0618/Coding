@@ -1,0 +1,37 @@
+import java.util.Scanner;
+public class main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        double mintemp = Double.MAX_VALUE;
+        double maxtemp = -Double.MAX_VALUE;
+        double mediatemp = 0;
+        double somatemp = 0;
+        System.out.println("Insira a quantidade de temperaturas que deseja inserir:");
+        int qntd = scan.nextInt();
+
+
+
+        for(int i = 0; i < qntd; i++) {
+            System.out.println("Insira a " + (i + 1)+ "º temperatura, em graus celsius:");
+            double temperaturas = scan.nextDouble();
+
+             somatemp += temperaturas;
+             mediatemp = somatemp/qntd;
+
+                if (temperaturas < mintemp) {
+                     mintemp = temperaturas;
+
+                }
+                if (temperaturas > maxtemp) {
+                     maxtemp = temperaturas;
+
+                }
+        }
+        
+        System.out.println("Temperatura máxima: " + maxtemp + "°C");
+        System.out.println("Temperatura mínima: " + mintemp + "°C");
+        System.out.println("Temperatura média: " + mediatemp + "°C");
+
+    }
+}

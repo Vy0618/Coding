@@ -1,0 +1,162 @@
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+NUMERO IMPAR OU PAR
+
+import java.util.Scanner;
+public class numeroimparoupar {
+    public static void main(String[] args) {
+int n;
+Scanner scan = new Scanner(System.in);
+        System.out.println("Entre com um número inteiro qualquer:");
+        n = scan.nextInt();
+
+        if (n%2 != 0){
+            System.out.println("O número é ímpar");
+        } else {
+            System.out.println("O número é par.");
+        }
+
+
+
+
+    }
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+IMPRIMA OS NUMEROS DE 1 A 10 UTILIZANDO O LAÇO FOR
+
+import java.util.Scanner;
+public class numerosde1a10 {
+    public static void main(String[] args) {
+
+        int n = 0;
+
+        for (int i = 0; i < 10; i++){
+            n++;
+            System.out.println(n);
+        }
+
+
+
+    }
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+CRIE UM PROGRAMA EM JAVA QUE VERIFIQUE SE UM NUMERO É PRIMO (não foi feito na prova)
+
+import java.util.Scanner;
+public class Main {
+
+    public static void main (String args[]){
+        Scanner scan = new Scanner (System.in);
+        int numero, elemesmo=0, resto, contador=0;
+        
+        System.out.println("Digite um Número: ");
+        numero = scan.nextInt();
+
+        while ( numero >= elemesmo){
+            ++elemesmo;
+
+            resto = numero % elemesmo;
+
+            if ( resto == 0){
+                contador++;
+            }
+        }
+        if ( contador <= 2)  {
+            System.out.println("O Número "+numero+" é primo");
+        }
+        else
+        {
+            System.out.println("Numéro "+numero+" não é primo");
+        }
+    }
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+CRIE UM PROGRAMA QUE LEIA O NOME E A IDADE DE 10 PESSOAS E VERIFIQUE SE CADA PESSOA É MAIOR OU MENOR DE IDADE
+
+import java.util.Scanner;
+public class maioroumenordeidade {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int idade;
+        String nome;
+
+        for (int i = 1; i < 5; i++){
+            System.out.println("Insira a idade da " + i + "º pessoa em anos:");
+            idade = scan.nextInt();
+            scan.nextLine();
+            System.out.println("Insira o nome desta pessoa:");
+            nome = scan.nextLine();
+
+
+            if (idade < 18){
+                System.out.println(nome + " é menor de idade.");
+            } else {
+                System.out.println(nome + " é maior de idade.");
+            }
+        }
+
+
+
+
+
+    }
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+O QUE SERA IMPRESSO POR ESTE CÓDIGO?
+15
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+VERIFIQUE O PROGRAMA ABAIXO, IDENTIFIQUE E CORRIJA OS ERROS
+
+1) Não importa o Scanner;
+2) Na sexta linha, falta ";" e o "int" está minúsculo. Correto: num1 = scanner.nextInt();
+3) Na décima linha, "soma == 10" está sem parênteses. Correto: if (soma == 10){
+4) Na décima terceira linha, "soma = 10" está sem parênteses e deve ter uma exclamação.  Correto: else (soma != 10){
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Qual a principal diferença entre um HD (Hard Disk) e um SSD (Solid State Drive)?
+B) O SSD não tem partes móveis, enquanto o HD tem discos giratórios.
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Em relação às unidades de processamento gráfico (GPUs), qual das alternativas
+caracteriza corretamente uma diferença entre GPUs integradas e GPUs dedicadas?
+d) GPUs dedicadas possuem componentes próprios, como memória VRAM, o que
+garante melhor desempenho em tarefas gráficas exigentes.
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Dê o nome e a descrição da cada componente da figura abaixo!
+1) CPU - Central Processing Unit: é responsável por interpretar instruções e realizar cálculos.
+2) Memória RAM - armaneza informações à curto prazo, como variáveis.
+3) SSD OU HD - armazena informações à longo prazo.
+4) Conectores - serve para acoplar SSDs e outros dispositivos.
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Essas são entradas de vídeo de o nome delas e a diferença de cada uma delas.
+1) AVG - cabo de vídeo antigo, sem caracteristicas marcantes. Pode ser conectado em dispositivos variáveis, tais quais monitores e televisões.
+2) DVI - foi o primeiro a transmitir sinal de vídeo digital. Permite resoluções de 1920 x 1080 (Full HD);
+3) HDMI - é encontrado na maioria dos equipamentos eletrônicos atuais. Transmite video e áudio sem a necessidade de cabos separados. Possui uma maior qualidade de imagem e taxas de atualizações;
+4) DISPLAYPORT - é similar ao DHMI, transmitindo video e áudio simultaneamente. Possui a melhor qualidade de imagem e taxas de atualização, e é usado quase exclusivamente em computadores.
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Quais entradas são essas abaixo?
+Uma delas tem a mesma função e só muda a cor por quê?
+
+1) USB 2.0 - Com taxa de transmissão de 480 mb/s
+2) USB 3.2 - Com taxa de transmissão de 20 gb/s
+3) Entrada para cabo de rede RJ-45;
+4) USB 3.1 - Com taxa de transmissão de 10gb/s
+
+

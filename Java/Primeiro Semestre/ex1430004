@@ -1,0 +1,37 @@
+import java.util.Scanner;
+public class main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Entre com o seu salário:");
+        double salario = scan.nextDouble();
+
+        double aumento = 0;
+        int x = 0;
+        double total = 0;
+
+        if(salario <=280){
+            x = 20;
+            aumento = ((salario*x)/100);
+            total = salario + aumento;
+        } else if (salario > 280 && salario <=700){
+            x = 15;
+            aumento = ((salario*x)/100);
+            total = salario + aumento;
+        } else if (salario > 700 && salario <=1500){
+            x = 10;
+            aumento = ((salario*x)/100);
+            total = salario + aumento;
+        } else if (salario > 1500){
+            x = 5;
+            aumento = ((salario*x)/100);
+            total = salario + aumento;
+        }
+
+        System.out.println("Pré Ajuste: R$" + salario);
+        System.out.println("Percentual aplicado: " + x + "%");
+        System.out.println("Aumento: R$" + aumento);
+        System.out.println("Total: R$" + total);
+
+    }
+}
