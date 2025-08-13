@@ -5,9 +5,16 @@ public class testecarro {
 
             String modelo;
             int ano;
+
+
+            //public -> acesso livre; void -> atributo vazio, com valor a ser atribuido; setModelo -> comando que
+             //irá atribuir um valor; String modelo-> o espaço vazio está destinado a Strings atreladas à
+             //variável modelo.
             public void setModelo(String modelo) {
                 this.modelo = modelo;
             }
+             //public -> acesso livre; String-> serve para pescar um modelo da caixa acima; 
+             //return -> retorna o valor pescado.
             public String getModelo() {
                 return modelo;
             }
