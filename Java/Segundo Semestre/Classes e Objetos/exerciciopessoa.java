@@ -1,6 +1,10 @@
 public class exerciciopessoa {
     public static void main(String[] args) {
 
+        //parecia magia da primeira vez que vi isso em aula. estudando agora em casa, isso é ridiculamente fácil.
+        //com certeza me darei mal no processo de replicar esse exercício no papel, apesar de agora entender
+        //como funciona.
+
         class classPessoa {
             String Nome;
             int Idade;
