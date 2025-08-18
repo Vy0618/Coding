@@ -39,34 +39,40 @@ public class ObjetoAviao {
             public int getQntdAssentos() {
                 return qntdAssentos;
             }
+
         }
 
+        System.out.println("Entre com o numero de aviões: ");
+        int n = scan.nextInt();
+        scan.nextLine();
 
-        System.out.println("Entre com o tipo de avião: ");//]
-        String tipo = scan.nextLine();
-        System.out.println("Entre com a cor do avião: ");
-        String cor = scan.nextLine();
-        System.out.println("Entre com a velocidade do avião: ");
-        int velocidade = scan.nextInt();
-        System.out.println("Entre com a quantidade de assento: ");
-        int qntdAssentop = scan.nextInt();
-
-        Aviao Aviao1 = new Aviao();
-
-        Aviao1.setTipo(tipo);
-        Aviao1.setCor(cor);
-        Aviao1.setVelocidade(velocidade);
-        Aviao1.setQntdAssentos(qntdAssentop);
+        for(int i=0; i<n;i++) {
 
 
-        System.out.println("Modelo: " + Aviao1.getTipo());
-        System.out.println("Cor: " + Aviao1.getCor());
-        System.out.println("Velocidade: " + Aviao1.getVelocidade() + " Km/h");
-        System.out.println("Quantidade de Assentos: " + Aviao1.getQntdAssentos());
+            System.out.println("Entre com o tipo de avião: ");//]
+            String tipo = scan.nextLine();
+            System.out.println("Entre com a cor do avião: ");
+            String cor = scan.nextLine();
+            System.out.println("Entre com a velocidade do avião: ");
+            int velocidade = scan.nextInt();
+            System.out.println("Entre com a quantidade de assento: ");
+            int qntdAssentop = scan.nextInt();
+            scan.nextLine();
 
+            Aviao Aviao1 = new Aviao();
 
+            Aviao1.setTipo(tipo);
+            Aviao1.setCor(cor);
+            Aviao1.setVelocidade(velocidade);
+            Aviao1.setQntdAssentos(qntdAssentop);
 
-
+            System.out.println("-------- AVIAO " + (i + 1) + " --------");
+            System.out.println("Modelo: " + Aviao1.getTipo());
+            System.out.println("Cor: " + Aviao1.getCor());
+            System.out.println("Velocidade: " + Aviao1.getVelocidade() + " Km/h");
+            System.out.println("Quantidade de Assentos: " + Aviao1.getQntdAssentos());
+            System.out.println("-------------------------");
 
         }
     }
+}
