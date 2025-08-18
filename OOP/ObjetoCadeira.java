@@ -58,18 +58,18 @@ public class ObjetoCadeira {
             String descansoBraco = scan.nextLine();
 
 
-            Cadeira Aviao1 = new Cadeira();
+            Cadeira Cadeira1 = new Cadeira();
 
-            Aviao1.setTipo(tipo);
-            Aviao1.setCor(cor);
-            Aviao1.setMaterial(material);
-            Aviao1.setDescansoBraco(descansoBraco);
+            Cadeira1.setTipo(tipo);
+            Cadeira1.setCor(cor);
+            Cadeira1.setMaterial(material);
+            Cadeira1.setDescansoBraco(descansoBraco);
 
             System.out.println("-------- Cadeira " + (i + 1) + " --------");
-            System.out.println("Modelo: " + Aviao1.getTipo());
-            System.out.println("Cor: " + Aviao1.getCor());
-            System.out.println("Material: " + Aviao1.getMaterial());
-            System.out.println("Descanso de Braço: " + Aviao1.getDescansoBraco());
+            System.out.println("Modelo: " + Cadeira1.getTipo());
+            System.out.println("Cor: " + Cadeira1.getCor());
+            System.out.println("Material: " + Cadeira1.getMaterial());
+            System.out.println("Descanso de Braço: " + Cadeira1.getDescansoBraco());
             System.out.println("-------------------------");
 
         }
