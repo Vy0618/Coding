@@ -49,6 +49,16 @@ nav li{
 }
 }
 
+footer{
+    border: solid white 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+   p{ text-align: center;
+   }
+ 
+}
 
 .icons{
     display: flex;
@@ -62,7 +72,7 @@ color:rgb(55, 55, 255);
 }
 a:visited{
     transition: 0.1s;
-    color:rgb(55, 55, 255)
+    color:rgb(255, 255, 255)
 }
  
 }
@@ -174,9 +184,12 @@ button{
 
 
 button:hover{
-         background-color:rgb(55, 55, 255);
+         background-color:rgb(80, 0, 172);
         color: rgb(0, 0, 0);
     }
+
+
+
 
 
 
