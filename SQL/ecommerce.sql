@@ -20,6 +20,53 @@ SET time_zone = "+00:00";
 --
 -- Banco de dados: `ecommerce`
 --
+/*use ecommerce;
+
+CREATE TABLE clientes (
+    id_clientes int (10) primary key not null AUTO_INCREMENT,
+    nome char(50) default null,
+    email char(50) default null,
+    senha char(15) default null,
+    cpf char (14) default null,
+    endereco char (100) default null,
+    cidade char (100) default null,
+    estado char (100) DEFAULT null,
+    cep char (20) default null,
+    dataCadastro datetime default null
+    );
+    
+
+    create TABLE produtos(
+        id_produto int (10) PRIMARY KEY not null AUTO_INCREMENT,
+        nome text not null,
+        descricao text not null,
+        preco double not null,
+        sku text not null,
+        estoque int (10) not null,
+        dataCriacao datetime not null
+        );
+
+Create TABLE pedido(
+    id_pedido int (10) primary key not null AUTO_INCREMENT,
+    id_cliente int(10),
+    FOREIGN KEY (id_cliente) REFERENCES cliente (id_cliente),
+	dataPedido datetime not null ,
+    status text not null,
+    valorTotal double not null,
+    enderecoEntrega text not null
+    );
+    CREATE TABLE itemPedido(
+    id_itemPedido int(10) PRIMARY KEY not null AUTO_INCREMENT,
+    id_pedido int(10) not null,
+    id_produto int(10) not null,
+    FOREIGN KEY (id_pedido) REFERENCES pedido (id_pedido),
+    FOREIGN KEY (id_produto) REFERENCES produto (id_produto),
+    quantidade int not null,
+    precoUnitario double not null
+    ); */
+
+
+
 
 -- --------------------------------------------------------
 
