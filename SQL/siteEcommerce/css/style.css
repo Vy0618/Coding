@@ -1,0 +1,117 @@
+
+header {
+    background-color: rgb(0, 0, 0);
+    font-family: Cochin;
+    border-bottom: white 2px;
+    border: 2px solid white;
+    margin-bottom: 10px;
+
+    h1{
+    text-align: center;
+    margin: 10px;
+    text-transform: uppercase;
+    font-size:30px;
+}
+nav a{
+    text-decoration: none;
+}
+
+nav ul{
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-weight: bold;
+
+    
+    a:link {
+  color: rgb(255, 255, 255);
+}
+
+/* visited link */
+a:visited {
+  color: rgb(255, 255, 255);
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(38, 57, 163);
+  text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+  color: rgb(38, 57, 163);
+}
+}
+
+nav li{
+    display:inline;
+    padding: 0 15px;
+}
+}
+
+
+
+footer{
+    border: solid white 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+   p{ text-align: center;
+   }
+ 
+}
+
+
+
+body{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: -apple-system;
+    text-justify: auto;
+    margin: 10px;
+}
+
+.secao{
+    
+    padding: 10px;
+    margin-left: 10px;
+    margin-bottom:30px;
+  
+
+}
+  
+.imagemprodutos{
+    width: 200px;
+    height: 200px;
+}
+.text-img {
+
+    display:flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    text-align: justify;
+    padding: 10px;
+    border: solid white 2px;
+    margin-bottom:5px;
+   
+  
+    .promocao-especial{
+    padding: 10px;
+    margin-left: 10px;
+    margin-bottom:30px;
+    border: solid white 2px
+    }
+ 
+    .imagem-promocao-especial img {
+    margin-left: 10px;
+    width: 330px; 
+    height: 330px; 
+    border-radius: 50%; 
+    border: 5px solid black; 
+    object-fit: cover; 
+    object-position: 50% 10% ;
+    }
+
+}
