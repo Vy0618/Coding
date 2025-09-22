@@ -25,7 +25,7 @@ Language:
 Java
 
 Group
-com.devsenai2A
+com.devsenai2A.petshop
 
 Artifact
 petshop
