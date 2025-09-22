@@ -1,0 +1,42 @@
+Open IDE Eclipse
+New Project
+Spring boot -> spring starter
+
+Service URL
+https://start.spring.io
+
+Name
+petshop
+
+Use default location
+Location
+C:\Users\Aluno\eclipse-workspace\petshop
+
+Type:
+Maven
+
+Packaging:
+Jar
+
+Java Version:
+17
+
+Language:
+Java
+
+Group
+com.devsenai2A
+
+Artifact
+petshop
+
+Version
+0.0.1-SNAPSHOT
+
+Description
+Demo project for petshop
+
+Package
+com.devsenai2A.petshop
+
+import
