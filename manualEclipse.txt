@@ -40,6 +40,10 @@ Package
 com.devsenai2A.petshop
 
 import
+spring boo devtools
+spring data jpa
+mysql driver
+spring web
 
 
 start the file
