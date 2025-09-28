@@ -1,0 +1,247 @@
+header{
+    background-color: rgb(0, 0, 0);
+    font-family: Cochin;
+    border-bottom: white 2px;
+    margin: 10px;
+    border: 2px solid white;
+
+    h1{
+    text-align: center;
+    margin: 10px;
+    text-transform: uppercase;
+    font-size:30px;
+}
+nav a{
+    text-decoration: none;
+}
+
+nav ul{
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-weight: bold;
+
+    
+    a:link {
+  color: rgb(255, 255, 255);
+}
+
+/* visited link */
+a:visited {
+  color: rgb(255, 255, 255);
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(38, 57, 163);
+  text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+  color: rgb(38, 57, 163);
+}
+}
+
+nav li{
+    display:inline;
+    padding: 0 15px;
+}
+}
+
+footer{
+    border: solid white 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+   p{ text-align: center;
+   }
+ 
+}
+
+.redes{
+    display: flex;
+    gap:20px;
+    padding: 10px 0px;
+ 
+}
+
+
+body{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: -apple-system;
+    text-justify: auto;
+}
+
+
+
+.secao{
+    border: purple solid 2px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-bottom:30px;
+    overflow: hidden;
+    position: relative;
+  
+
+}
+
+.text-img{
+
+    text-align: justify;
+    display:flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    text-align: justify;
+    padding: 10px;
+    margin-left: 10px;
+    margin-bottom:30px;
+    
+
+ .imgTextimg img {
+    margin-left: 30px;
+    width: 290px; 
+    height: 420px; 
+    border-radius: 10%; 
+    border: 5px solid black; 
+    object-fit: cover; 
+    object-position: 100% 10% ;
+    }
+
+
+}
+
+
+.tableProdutos{
+    border: red solid 2px;
+    width: 100%;
+    th, td{
+    padding: 12px;
+    text-align: center;
+}
+
+
+.fotosProdutos img{
+   align-items: center;
+    width: 175px; 
+    height: 175px; 
+    border-radius: 50%; 
+    border: 5px solid black; 
+    object-fit: cover; 
+   
+}
+
+.legendaProdutos{
+    text-align: center;
+    font-weight: bold;
+}
+
+
+}
+.tableProjetos{
+    width: 100%;
+   
+    th, td{
+    padding: 12px;
+    text-align: center;
+    font-size: large;
+}
+thead{
+
+margin-bottom: 2px solid rgb(255, 255, 255);
+}
+
+}
+
+
+.redes{
+    align-items: center;
+}
+
+.Contato{
+   
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+    max-width: 1800px;
+
+    input, textarea {
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid #444;
+    background-color: #222;
+    color: #f0f0f0;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    resize: vertical;
+}
+}
+
+button{
+    display:block;
+    margin:auto;
+    width: 30%;
+    border-radius: 3px;
+    background: rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+
+}
+
+
+button:hover{
+         background-color:rgb(80, 0, 172);
+        color: rgb(0, 0, 0);
+    }
+
+/************************************************************************/
+
+
+
+.product-list{
+
+    border: blue solid 2px;
+   
+
+.product-item{
+    border: red solid 1px;
+    display: flex;
+    padding: 12px;
+    margin: 12px;
+     overflow: hidden;
+    position: relative;
+}
+}
+
+.product-table table{
+   
+         border: red solid 2px;
+         width: 100%;
+         margin-left: 30px;
+         table-layout: fixed;
+         border-collapse: collapse;
+}
+
+  .product-table td{  
+    
+    text-align: center;
+     border: yellow solid 2px;
+     padding: 5px;   
+      
+    }
+ 
+ .product-image img{
+         margin-left: 30px;
+         width: 175px; 
+         height: 175px; 
+         border-radius: 50%;            
+        border: 3.5px solid green; 
+         object-fit: cover; 
+   
+}

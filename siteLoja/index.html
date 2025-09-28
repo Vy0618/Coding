@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+
+
+    <title>Portifólio</title>
+</head>
+<body>
+    <div class="secao">
+    <header class="header">
+         <div class="container">
+            <h1>Equipamento Fisioterapêutico</h1>
+
+<nav>
+    <ul class="links">
+            <li><a href = muletas.html > Muletas </a></li>
+            <li><a href = cadeiras.html > Cadeiras de Rodas </a></li>
+             <li><a href = botas.html > Botas Ortopédicas </a></li>
+            <li><a href = #contatos > Contatos</a></li>
+            </ul>
+        </nav> 
+    </div>
+ </header>
+    </div>
+    <div class="secao">
+
+    <div class="text-img">
+<div id="promocaoSemana">
+<h2>Promoção da Semana</h2>
+  <p>🩺 <strong>Muleta Genérica – Promoção Especial da Semana!</strong></p>
+<br>
+
+<p>Desenvolvida para garantir segurança e conforto na locomoção, a Muleta Genérica é indicada para reabilitação, pós-operatórios e limitações temporárias de mobilidade. Leve, resistente e ajustável, proporciona apoio eficaz em diferentes fases do tratamento.</p>
+
+<p>🧑‍⚕️ <strong>Indicações:</strong> Reabilitação, fraturas, entorses, artroses e restrições de equilíbrio.</p>
+
+<p>🎯 <strong>Benefícios:</strong> Mais mobilidade, menos risco de quedas e maior autonomia funcional.</p>
+
+<p>💰 <strong>Oferta por tempo limitado!</strong><br>
+Desconto de até 30%. Parcele em até 6x sem juros. Envio imediato para todo o Brasil.</p>
+
+
+
+    </p>
+</div>
+<div class="imgTextimg">
+         <img src="css/crutch.jpg">
+         <figcaption style="font-size: 0.8em; text-align: center; margin-left: 30px;">🛡️ Garantia de 12 meses contra defeitos de fabricação. </figcaption>
+     </div>
+ </div>
+</div>
+
+
+ <div id="categoriasProdutos" class="secao">
+    <h2 style="text-align: center;"> Categorias de Produtos </h2>
+    <table class="tableProdutos">
+        <thead>
+            <tbody>
+            <tr>
+    
+                 
+                <th> 
+                    <div class="fotosProdutos">
+                        <a href="muletas.html">
+                        <img src = "css/crutch.jpg">
+                        </a> 
+                        </div>
+                    </th>
+
+                <th> 
+                    
+                    <div class="fotosProdutos">
+                        <a href='cadeiras.html'>
+                        <img src="css/Cadeira-de-rodas.png"></a></div> 
+                </th>
+
+                <th> <div class="fotosProdutos">
+                    <a href="botas.html">
+                        <img src="css/bota-ortopedica.png"></div></a></th>
+                
+            </tr>
+            <tr class="legendaProdutos">
+                <td>Muletas</i></td>
+                <td>Cadeiras de Rodas</td>
+                <td>Botas Ortopédicas </td>
+                </div>
+                
+            </tr>      
+            </tbody>
+        </thead>
+    </table>
+    
+ </div>
+
+<div id="redes"class="secao">
+    
+    <h2> Redes </h2>
+    <div class="redes">                    
+<i class="fab fa-instagram fa-3x"></i>
+<i class="fab fa-facebook fa-3x"></i>
+<i class="fab fa-telegram fa-3x"></i>
+<i class="fab fa-twitter fa-3x"></i>
+
+</div>
+ </div>
+
+
+<div class="secao">
+<div id="contatos" class="Contato">
+                <h2>Contato</h2>
+                <p>Envie-me uma mensagem!</p>
+                <div class="formulario">
+                    <form id="meu-form"   action="https://formspree.io/f/xandvdrn" method="post">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome_usuario" required>
+                </div>
+                <div class="formulario">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email_usuario" required>
+                </div>
+                <div class="formulario">
+                    <label for="mensagem">Mensagem:</label>
+                    <input id="mensagem" name="mensagem_usuario" required>
+                </div>
+                <div class="botão">
+                    <button type="submit">Enviar</button>
+                </div>
+                </form>
+                <p id="msg"></p>
+</div>
+</div>
+<script>
+     const form = document.getElementById("meu-form");
+  const msg = document.getElementById("msg");
+
+  form.onsubmit = function (e) {
+    e.preventDefault();
+
+    fetch(form.action, {
+      method: "POST",
+      body: new FormData(form),
+      headers: { "Accept": "application/json" }
+    })
+
+    .then(function (response) {
+      if (response.ok) {
+        msg.textContent = "Mensagem enviada com sucesso.";
+        form.reset();
+      } else {
+        msg.textContent = "Tente novamente.";
+      }
+    })
+  };
+</script>
+
+<footer class = "footer">
+
+    <p>&copy; 2025 - Todos os direitos reservados.</p>
+</footer>
+
+
+</body>
+</html>
