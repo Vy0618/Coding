@@ -1,0 +1,8 @@
+2) DDL (Data Definition Language) é a linaguem utilizada para definir, alterar e remover a estrutura de objetos de banco de dados como tabelas e índices. Ex.:create, alter, drop.
+DML (Data Manipulation Language) é a linguagem utilizada para adicionar, modificar, excluir e consultar registros. Ex.: insert, update, delete e select.
+
+3)A chave primária é utilizada para atribuir uma identidade a uma determinada tabela. A chave estrangeira é utilizada para invocar uma tabela e seus atributos em outras circunstâncias. No modelo acima, exemplificando a tabela "pedidos compra", utilizei a chave primária id_pedido para atribui-la uma identidade, e a chave estrangeira id_itens para invocar informações relacionados aos itens que compõem o pedido.
+
+4) select * from clientes where id_cliente = x;
+
+5) Cardinalidade é a utilizada para esquematizar as relações que ocorrem entre diferentes elementos do banco de dados, ou do mundo real. Ex.: um cliente pode comprar quantos produtos? um produto pode ser comprado por quantos clientes? A organização destas relações é denominada cardinalidade. No meu modelo lógico, foi utilizada justamente para especificar as relações entre tabelas.
