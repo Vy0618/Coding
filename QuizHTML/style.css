@@ -1,0 +1,78 @@
+header {
+    background-color: pink;
+    display: flex;
+}
+
+
+header h3 {
+    margin-left: 10%;
+}
+
+
+body{
+    background-color: rgba(255, 192, 203, 0.170);
+}
+
+
+.question {
+    margin: 20vh;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+    border-radius: 10px;
+
+}
+
+
+body h2 {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+.options {
+    place-items: center;
+}
+
+button {
+    width: 20vh;
+    display: inline-block;
+    border-radius: 10px;
+    color: white;
+    font-weight: bolder;
+    gap: 100vh;
+    margin-bottom: 10px;
+}
+
+
+.conjunto1{
+    gap: 40px;
+  
+}
+
+
+.conjunto2{
+   
+     gap: 40px;
+}
+
+
+
+.b1 {
+    background-color: red;
+
+}
+
+.b2 {
+    background-color: blue;
+
+}
+
+.b3 {
+    background-color: green;
+}
+
+.b4 {
+    background-color: yellow;
+}
