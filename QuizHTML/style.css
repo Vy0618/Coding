@@ -9,7 +9,7 @@ header h3 {
 }
 
 
-body{
+body {
     background-color: rgba(255, 192, 203, 0.170);
 }
 
@@ -20,7 +20,7 @@ body{
     align-items: center;
     background-color: pink;
     border-radius: 10px;
-
+    border: solid 2px;
 }
 
 
@@ -28,11 +28,14 @@ body h2 {
     text-align: center;
     margin-left: 10%;
     margin-right: 10%;
+   
 }
 
 
 .options {
     place-items: center;
+    justify-content: center;
+    align-items: center;
 }
 
 button {
@@ -41,31 +44,32 @@ button {
     border-radius: 10px;
     color: white;
     font-weight: bolder;
-    gap: 100vh;
+    margin-left: 15px;
+    margin-bottom: 7px;
+    border: 0px;
+}
+
+
+.conjunto1 {
+
     margin-bottom: 10px;
+
 }
 
 
-.conjunto1{
-    gap: 40px;
-  
-}
+.conjunto2 {
 
-
-.conjunto2{
-   
-     gap: 40px;
+    margin-bottom: 10px;
 }
 
 
 
 .b1 {
     background-color: red;
-
 }
 
 .b2 {
-    background-color: blue;
+    background-color: rgb(0, 0, 255);
 
 }
 
