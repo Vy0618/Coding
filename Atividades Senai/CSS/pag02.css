@@ -1,0 +1,76 @@
+body {
+    background-image:
+        radial-gradient(300px at 0% 0%, rgb(48, 150, 218) 10%, transparent 100%),
+        radial-gradient(300px at 100% 100%, rgb(48, 150, 218) 10%, black 100%);
+    background-attachment: fixed;
+}
+
+header{
+    margin:5px;
+}
+
+#senai {
+    font-weight: bolder;
+    color: white;
+}
+
+.superbox {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 5%;
+    margin-left: 5vh;
+    margin-right: 5vh;
+}
+
+.esquerda {
+
+    max-width: 50%;
+}
+
+.esquerda p {
+    color: white;
+    text-justify: inter-word;
+}
+
+.esquerda h1 {
+    color: white;
+    font-weight: bolder;
+}
+
+
+.direita img {
+    height: 300px;
+    width: 300px;
+}
+
+button {
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttonsRight {
+
+    position: fixed;
+    right: 30px;
+    /* Distance from right edge */
+    top: 50%;
+    /* Middle of viewport */
+    transform: translateY(-50%);
+    /* Centers vertically */
+}
+
+.buttonsLeft {
+    position: fixed;
+    left: 30px;
+    /* Distance from right edge */
+    top: 50%;
+    /* Middle of viewport */
+    transform: translateY(-50%);
+    /* Centers vertically */
+    z-index: 1000;
+    /* Ensures it stays above other content */
+}
