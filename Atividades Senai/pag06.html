@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pag06</title>
+</head>
+
+<body>
+    <header>
+        <h3>SENAI</h3>
+    </header>
+    <h1>Como ligar o CSS ao HTML?</h1>
+    <h3>Meios de “linkar” o css com o html e qual é mais usado no mercado</h3>
+    <p>Inline (Embutido):
+        CSS é aplicado diretamente no elemento.
+        <'p style="color: blue; font-size: 16px;">Este é um parágrafo com estilo inline.</'p>
+    </p>
+    <p>Externo:
+        CSS fica em um arquivo nome.CSS e você “linka” ele com esse arquivo através da TAG link.
+        <'head>
+            <'link rel="stylesheet" href="style.css">
+        </'head>
+    </p>
+
+    <p>Interna:
+        CSS é embutido no head através da tag Style.
+        <’!DOCTYPE html>
+            <’html>
+                <’head>
+                    <’style>
+                        ‘body {
+                        background’-color: ‘lightgray;
+                        }
+                        h1 ‘{
+                        color: ‘navy;
+                        margin-left: ‘20px;
+                        }
+                    </’style>
+                </’head>
+                <’body>
+
+                    <’h1>Este é um título com estilo interno.</’h1>
+                    <’p>Este é um parágrafo com estilo interno.</’p>
+
+                </’body>
+            </’html>
+    </p>
+</body>
+
+</html>
