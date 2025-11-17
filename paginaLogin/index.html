@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Minimalista</title>
+   <link rel = "stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+        <div class="form-card">
+            <h1>Formulário Minimalista</h1>
+            <form id="meu-form" action="https://formspree.io/f/xandvdrn" method="POST">
+               
+                
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Senha</label>
+                    <input type="password" id="senha" name="senha" required>
+                </div>
+                  
+                <button type="submit" class="btn-submit" id="submit-btn">Enviar Mensagem</button>
+                
+                <div id="mensagem" class="message"></div>
+            </form>        
+            <div class="form-footer">
+                <p>Ao enviar este formulário, você concorda com nossos <a href="#">Termos de Uso</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+  
+
+const EMAIL_VALIDO = "admin@exemplo.com";
+const SENHA_VALIDA = "Senha123";
+
+const form = document.getElementById("meu-form");
+const msg = document.getElementById("mensagem");
+
+function validarCredenciais(email, senha) {
+    return email === EMAIL_VALIDO && senha === SENHA_VALIDA;
+}
+
+form.onsubmit = function (e) {
+    e.preventDefault();
+
+    const email = document.getElementById("email").value;
+    const senha = document.getElementById("senha").value;
+
+    if (!validarCredenciais(email, senha)) {
+        msg.textContent = "Email ou senha incorretos. Tente novamente.";
+        msg.className = "message error";
+        return;
+    }
+
+    fetch(form.action, {
+        method: "POST",
+        body: new FormData(form),
+        headers: { "Accept": "application/json" }
+    })
+    .then(function (response) {
+        if (response.ok) {
+            msg.textContent = "Login realizado com sucesso! Redirecionando...";
+            msg.className = "message success";
+            
+          
+            setTimeout(function() {
+                window.location.href = "sucessful.html";
+            }, 2000);
+            
+        } else {
+            msg.textContent = "Tente novamente.";
+            msg.className = "message error";
+        }
+    })
+    .catch(function (error) {
+        msg.textContent = "Erro de conexão. Tente novamente.";
+        msg.className = "message error";
+    });
+};
+</script>
+    
+</html>
