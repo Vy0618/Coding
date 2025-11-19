@@ -1,0 +1,58 @@
+body {
+    background-color: black;
+    color: white;
+    margin: 5vh;
+}
+
+
+header{
+    h1{
+        font-size: 70px;
+        justify-self: center;
+        color: rgb(255, 255, 255);
+        -webkit-text-fill-color:rgb(0, 0, 0);
+        -webkit-text-stroke-width: 1px;
+    }
+}
+
+
+.mainform {
+    margin: 30vh;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    display: block;
+}
+
+
+
+
+input {
+    border-radius: 5px;
+    margin: 10px;
+    width: 50vh;
+    height: 4vh;
+}
+
+
+.button {
+    justify-self: center;
+   
+    button {
+        border-radius: 5px;
+        color: white;
+        background-color: black;
+        border: 1px solid white;
+    }
+
+
+    button:hover {
+        background-color: rgb(255, 255, 255);
+        color: black;
+    }
+}
+
+
+input, .button :hover{
+    cursor: pointer;
+}
