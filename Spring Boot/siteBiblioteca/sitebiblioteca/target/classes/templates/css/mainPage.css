@@ -1,0 +1,140 @@
+* {
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header,
+footer {
+    height: 5vh;
+    background-color: rgb(83, 9, 9);
+    display: flex;
+    padding: 5px;
+    gap: 3vh;
+
+    .containerElementsHeaderFooter {
+        width: 100%;
+        gap: 10px;
+        margin-right: 7vh;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+
+    }
+
+    .elementHeaderFooter {
+        background-color: #aa0707;
+        padding: 5px;
+        border: none;
+        border-radius: 5px;
+
+    }
+
+    .imgContainerHeader {
+        width: 70px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #ffffff;
+        color: black;
+    }
+}
+
+#search{
+    color: black;
+}
+
+
+body {
+    background-color: black;
+}
+
+.superbox {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.containerForm {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+
+    input {
+        margin: 10px;
+    }
+}
+
+#imgLivro{
+    height: 300px;
+    width: 200px;
+}
+
+.livrosContainer{
+    border: 2px solid green;
+    padding: 10px;
+    max-width: 100vh;
+    max-height: 50vh;
+  
+
+}
+
+button{
+    background-color: #aa0707;
+    border: none;
+    border-radius: 5px;
+    padding: 4px;
+    margin-top: 5px;
+
+}
+button:hover{
+ background-color: #aa07078e;
+}
+#anterior{
+    margin-right: 10px;
+}
+#submit{
+    width: 7vh;
+    align-self: center;
+}
+#search{
+    border-radius:5px;
+    padding: 2px;
+}
