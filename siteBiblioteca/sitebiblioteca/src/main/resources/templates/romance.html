@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/mainPage.css">
+    <script src="script.js" defer></script>
+    <title>Livros de Romance</title>
+</head>
+
+<body>
+    <header>
+        <div class="titleHeader">
+            <h1> Biblioteca</h1>
+        </div>
+
+        <div class="containerElementsHeaderFooter">
+
+            <div> <a class="elementHeaderFooter" href="mainPage.html">Home</a> </div>
+
+            <div class="dropdown">
+
+                <a class="elementHeaderFooter" href="#">Categorias</a>
+
+                <div class="dropdown-content">
+                    <a href="romance.html">Romance</a>
+                    <a href="acao.html">Ação</a>
+                    <a href="policial.html">Policial</a>
+                    <a href="drama.html">Drama</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="imgContainerHeader">
+            <img src="img/libraryicon.png">
+        </div>
+
+    </header>
+
+    <div class="superbox">
+        <div class="containerTitle">
+            <h1 class="page-title">Livros de Romance</h1>
+        </div>
+
+        <div class="livrosContainer">
+            <div class="imgPesquisa">
+                <img id="imgLivro" alt="Capa do livro">
+            </div>
+            <h2 id="tituloLivro"></h2>
+            <p><strong>Autor:</strong> <span id="autorLivro"></span></p>
+            <p><strong>Publicação:</strong> <span id="publicacaoLivro"></span></p>
+            <p><strong>Páginas:</strong> <span id="paginasLivro"></span></p>
+            <p><strong>Gênero:</strong> <span id="generoLivro"></span></p>
+            <p id="textoLivro"></p>
+
+            <div class="buttonsContainer">
+                <button id="anterior">Anterior</button>
+                <button id="proximo">Próximo</button>
+            </div>
+        </div>
+        
+    </div>
+
+    <footer>
+        <h3> Todos os Direitos Reservados © 2025</h3>
+    </footer>
+
+</body>
+
+</html>
